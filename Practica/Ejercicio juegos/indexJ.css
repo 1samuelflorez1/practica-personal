@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+}
+body{
+    background-color: rgb(97, 24, 24);
+}
+.divsolo{
+    background-color: rgb(125, 38, 38);
+    width: 240px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 10px;
+}
+.divsolojuegosclass{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 30px;
+}
+.imagen{
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    margin: 0px;
+}
+p{
+    color: white;
+    margin-bottom: 10px;
+}
+h3{
+        color: white;
+}
+.btnGames{
+    background-color: rgb(207, 63, 63);
+    border: none;
+    border-radius: 10px;
+    height: 25px;
+    margin-top: 6px;
+    color: white;
+    cursor: pointer;
+}
+.btnquitar{
+    background-color: rgb(207, 63, 63);
+    border: none;
+    border-radius: 10px;
+    height: 25px;
+    margin-top: 6px;
+    color: white;
+    cursor: pointer;
+}
+.btnquitar:hover{
+   background-color: rgb(176, 49, 49); 
+}
+.btnGames:hover{
+    background-color: rgb(176, 49, 49);
+}
+.select{
+    background-color: rgb(193, 66, 66);
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 70px;
+    height: 20px;
+    color: white;
+    cursor: pointer;
+}
+.clasesjuegos{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 30px;
+}
+.divsolo2{
+    background-color: rgb(78, 18, 18);
+    width: 240px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 10px;
+}
+.tituloReserva{
+    color: white;
+    font-size: 70px;
+    margin-top: 50px;
+    display: flex;
+    justify-self: center;
+}
+.textoselector{
+    color: white;
+    margin-top: 10px;
+
+}
