@@ -19,7 +19,7 @@ if (saved) {
 
 function renderJardin() {
 
-  divPlantasJardin.innerHTML = "" // limpiar antes de pintar de nuevo
+  divPlantasJardin.innerHTML = "" 
 
   const jardinCards = JSON.parse(localStorage.getItem("copiasjardin")) || []
 
@@ -81,7 +81,9 @@ function misPlantas(plantas) {
     mainDiv.appendChild(divPlantas)
 
     divIndividual.addEventListener("click", () => {
-      
+      divPlantasJardin.appendChild(divIndividual) //de esta forma puedo quitar lñas cards que estan en la parte superior
+      //hacia la parte inferrior
+    
       const planJardin = {
         common_name: plantaIndividual.common_name,
         scientific_name: plantaIndividual.scientific_name,
