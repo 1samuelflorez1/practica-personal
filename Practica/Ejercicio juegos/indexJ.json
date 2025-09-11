@@ -1,0 +1,72 @@
+[
+{
+"id": 1,
+"title": "Cyberpunk 2077",
+"genre": ["Acción", "RPG"],
+"image": "https://cdn2.steamgriddb.com/thumb/4030e2eebb977639f8836aa25a293e40.jpg",
+"pcsAvailable": ["PC1","PC2","PC3","PC4","PC5","PC6","PC7","PC8","PC9","PC10"]
+},
+{
+"id": 2,
+"title": "The Witcher 3: Wild Hunt",
+"genre": ["RPG", "Aventura"],
+"image": "https://cdn2.steamgriddb.com/thumb/4904f82c12cecf6ec070fe77d7e913ce.jpg",
+"pcsAvailable": ["PC11","PC12","PC13","PC14","PC15","PC16","PC17","PC18","PC19","PC20","PC21"]
+},
+{
+"id": 3,
+"title": "Elden Ring",
+"genre": ["Acción", "RPG"],
+"image": "https://cdn2.steamgriddb.com/thumb/b7dc60f5a597d2a0687c2c43a3cd3417.jpg",
+"pcsAvailable": ["PC6","PC7","PC8","PC9","PC10","PC11","PC12","PC13","PC14","PC15","PC16","PC17","PC18"]
+},
+{
+"id": 4,
+"title": "Starfield",
+"genre": ["RPG", "Simulación"],
+"image": "https://cdn2.steamgriddb.com/thumb/ac79bc4536e67368f7a054716ebdf36f.jpg",
+"pcsAvailable": ["PC9","PC10","PC11","PC12","PC13","PC14","PC15","PC16","PC17","PC18","PC19","PC20","PC21","PC22"]
+},
+{
+"id": 5,
+"title": "Microsoft Flight Simulator",
+"genre": ["Simulación", "Estrategia"],
+"image": "https://cdn2.steamgriddb.com/thumb/49318f67c631cd59c097b51933b5df26.jpg",
+"pcsAvailable": ["PC13","PC14","PC15","PC16","PC17","PC18","PC19","PC20","PC21","PC22","PC23","PC24"]
+},
+{
+"id": 6,
+"title": "Half-Life: Alyx",
+"genre": ["FPS", "Realidad_VR"],
+"image": "https://cdn2.steamgriddb.com/thumb/980c9d1c2752a29a8cdc5669b9e22e6f.jpg",
+"pcsAvailable": ["PC1","PC2","PC3","PC4","PC5","PC6","PC7","PC8","PC9","PC10","PC11"]
+},
+{
+"id": 7,
+"title": "Valorant",
+"genre": ["FPS", "E-sports"],
+"image": "https://cdn2.steamgriddb.com/thumb/9edb6b9b7fc3b263b86740c635839dc4.jpg",
+"pcsAvailable": ["PC16","PC17","PC18","PC19","PC20","PC21","PC22","PC23","PC24","PC25","PC26","PC27","PC28","PC29","PC30"]
+},
+{
+"id": 8,
+"title": "Fortnite",
+"genre": ["Acción", "Battle_Royale"],
+"image": "https://cdn2.steamgriddb.com/thumb/6c4d541fc68d426aa028bc05f38164d1.jpg",
+"pcsAvailable": ["PC4","PC5","PC6","PC7","PC8","PC9","PC10","PC11","PC12","PC13","PC14","PC15"]
+},
+{
+"id": 9,
+"title": "Apex Legends",
+"genre": ["Acción", "Battle_Royale"],
+"image": "https://cdn2.steamgriddb.com/thumb/0d7a3aef18b1eb97e70a5148e2a2646f.jpg",
+"pcsAvailable": ["PC8","PC9","PC10","PC11","PC12","PC13","PC14","PC15","PC16","PC17","PC18","PC19"]
+},
+{
+"id": 10,
+"title": "Overwatch 2",
+"genre": ["FPS", "E-sports"],
+"image": "https://cdn2.steamgriddb.com/thumb/f8013fd6d898ca4374d8113f0939c70c.jpg",
+"pcsAvailable": ["PC11","PC12","PC13","PC14","PC15","PC16","PC17","PC18","PC19","PC20"]
+}
+]
