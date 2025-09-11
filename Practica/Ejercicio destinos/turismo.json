@@ -7,7 +7,7 @@
  "descripcion": "Explora la ciudad del amor con visitas a la Torre Eiffel y el Louvre.",
  "actividades": ["Tour guiado", "Cena en barco por el Sena", "Museos"],
  "reservado": false,
- "imagen": "paris.jpg",
+ "imagen": "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/474000/474240-Left-Bank-Paris.jpg",
  "calificacion": 4.8,
  "alojamiento": "Hotel 5 estrellas",
  "guia_incluido": true

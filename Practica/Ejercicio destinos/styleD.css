@@ -1,11 +1,19 @@
 .divIndividualTurismo{
-    width: 200px;
-    height: 200px;
+    width: 320px;
+    height: 670px;
     background-color: rgb(233, 233, 233);
     border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
 }
 .divcardsdestino{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 10fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 10fr));
     gap: 30px;
+
+}
+.imagen{
+    height: 160px;
+    width: 270px;
 }
