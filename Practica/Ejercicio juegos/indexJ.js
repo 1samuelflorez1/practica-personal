@@ -35,7 +35,7 @@ fetch("indexJ.json")
             selector.classList.add("select")
             selector.innerHTML = cadaJuego.pcsAvailable
                 .map(paracadapc => `<option value="${paracadapc}">${paracadapc}</option>`)
-                
+
 
             divIndividualJuegos.appendChild(titulo)
             divIndividualJuegos.appendChild(generos)
@@ -48,7 +48,7 @@ fetch("indexJ.json")
             mainDiv.appendChild(divsolojuegos)
 
             boton.addEventListener("click", () => {
-                if (!cardsGuardadas.some(j => j.id === cadaJuego.id)){
+                if (!cardsGuardadas.some(j => j.id === cadaJuego.id)) {
                     cardsGuardadas.push(cadaJuego)
                     localStorage.setItem("guardada", JSON.stringify(cardsGuardadas))
 
@@ -63,8 +63,6 @@ fetch("indexJ.json")
         mainDiv.appendChild(misReservas)
 
         function renderCard() {
-            let contenedorReservas = document.querySelector(".clasesjuegos")
-            if (contenedorReservas) contenedorReservas.remove()
 
             const juegosGuardadosPC = document.createElement("div")
             juegosGuardadosPC.classList.add("clasesjuegos")
@@ -90,22 +88,29 @@ fetch("indexJ.json")
                 nboton.innerText = "Quitar Reserva"
 
                 //esta parte es para eliminar la card que sea presionado con el click
-                
+
                 nboton.addEventListener("click", () => {
                     cardsGuardadas = cardsGuardadas.filter(coso => coso.id !== card.id)
                     localStorage.setItem("guardada", JSON.stringify(cardsGuardadas))
                     renderCard()
                 })
 
+
                 const nselector = document.createElement("select")
                 nselector.classList.add("select")
                 nselector.innerHTML = card.pcsAvailable
-                .map(paracadapc => `<option value="${paracadapc}">${paracadapc}</option>`)
-                .join("");
+                    .map(paracadapc => `<option value="${paracadapc}">${paracadapc}</option>`)
+                    .join("");
 
                 const textosselector = document.createElement("p")
                 textosselector.innerText = nselector.value
                 textosselector.classList.add("textoselector")
+
+                nselector.addEventListener("change", function() {
+                const opcionnueva = this.options[this.selectedIndex]
+                textosselector.textContent = opcionnueva.value
+                })
+
 
                 ndivIndividualJuegos.appendChild(ntitulo)
                 ndivIndividualJuegos.appendChild(ngeneros)
