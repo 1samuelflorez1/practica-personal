@@ -1,19 +1,35 @@
 .divIndividualTurismo{
     width: 320px;
-    height: 670px;
+    height: 700px;
     background-color: rgb(233, 233, 233);
     border-radius: 10px;
     margin: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .divcardsdestino{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 10fr));
     gap: 30px;
-
 }
 .imagen{
     height: 160px;
     width: 270px;
+}
+.btnMain{
+    background-color: rgb(162, 162, 162);
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 200px;
+    margin-top: auto;
+    cursor: pointer;
+}
+.reservado{
+    background-color: rgb(82, 82, 82);
+
+}
+.btnMain:hover{
+    background-color: rgb(122, 122, 122);
 }
