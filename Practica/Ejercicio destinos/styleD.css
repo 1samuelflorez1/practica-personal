@@ -1,0 +1,11 @@
+.divIndividualTurismo{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 10px;
+}
+.divcardsdestino{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 10fr));
+    gap: 30px;
+}
