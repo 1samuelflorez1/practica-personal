@@ -7,6 +7,14 @@ fetch('armas.json')
         const guns = armas.data
         console.log(guns)
 
+    let cuentaFull = localStorage.getItem("costoSaved") || []
+
+    function renderPrecio(){
+        cuentaFull = Number(cuentaFull)
+        precioFull.innerText = cuentaFull
+        divcostoacumulado.appendChild(precioFull)
+    }
+
     const allGuns = document.createElement("div")
     allGuns.classList.add("allguns")
 
@@ -29,6 +37,8 @@ fetch('armas.json')
     precioFull.classList.add("precioFull")
     divcostoacumulado.appendChild(precioFull)
 
+    let preciO = 0
+
     guns.forEach(gun => {
         const divGun = document.createElement("div")
         divGun.classList.add("divgun")
@@ -43,7 +53,7 @@ fetch('armas.json')
 
         const cadencia = document.createElement("h4")
         cadencia.innerText = `Fire Rate: ${gun.weaponStats.fireRate}`
-        cadencia.classList.add("cadencia")
+        cadencia.classList.add("cadencia")  
 
         const price = document.createElement("h4")
         price.innerText = `Price: ${gun.shopData.cost}$`
@@ -52,6 +62,27 @@ fetch('armas.json')
         const boton = document.createElement("button")
         boton.innerText = "Buy"
         boton.classList.add("botonComprar")
+       
+        let comprado = false
+        boton.addEventListener("click", () => {
+            if(!comprado){
+            preciO += gun.shopData.cost
+            precioFull.innerHTML = preciO
+            comprado = true
+                if(boton.classList.contains("botonComprar")){
+                    boton.innerText = "Sell"
+                    boton.classList.toggle("botonVender")
+            }}else{
+                preciO -= gun.shopData.cost
+                precioFull.innerHTML = preciO
+                boton.innerText = "Buy"
+                boton.classList.remove("botonVender")
+                boton.classList.add("botonComprar")
+                comprado = false
+            }
+            cuentaFull.push(preciO)
+            localStorage.setItem("costoSaved", cuentaFull)  
+        })
 
         divGun.appendChild(imageGun)
         divGun.appendChild(nameGun)

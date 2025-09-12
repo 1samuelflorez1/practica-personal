@@ -63,8 +63,6 @@ fetch("indexJ.json")
         mainDiv.appendChild(misReservas)
 
         function renderCard() {
-            let contenedorReservas = document.querySelector(".clasesjuegos")
-            if (contenedorReservas) contenedorReservas.remove()
 
             const juegosGuardadosPC = document.createElement("div")
             juegosGuardadosPC.classList.add("clasesjuegos")
@@ -108,7 +106,7 @@ fetch("indexJ.json")
                 textosselector.innerText = nselector.value
                 textosselector.classList.add("textoselector")
 
-                nselector.addEventListener("change", () => {
+                nselector.addEventListener("change", function() {
                 const opcionnueva = this.options[this.selectedIndex]
                 textosselector.textContent = opcionnueva.value
                 })
