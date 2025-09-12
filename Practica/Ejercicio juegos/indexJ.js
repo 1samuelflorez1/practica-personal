@@ -108,11 +108,9 @@ fetch("indexJ.json")
                 textosselector.innerText = nselector.value
                 textosselector.classList.add("textoselector")
 
-                // actualizar tanto el <p> como el localStorage
-                nselector.addEventListener("change", (e) => {
-                    textosselector.innerText = e.target.value
-                    card.selectedPc = e.target.value // guardar en el objeto
-                    localStorage.setItem("guardada", JSON.stringify(cardsGuardadas))
+                nselector.addEventListener("change", () => {
+                const opcionnueva = this.options[this.selectedIndex]
+                textosselector.textContent = opcionnueva.value
                 })
 
 
