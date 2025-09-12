@@ -63,6 +63,8 @@ fetch("indexJ.json")
         mainDiv.appendChild(misReservas)
 
         function renderCard() {
+            let contenedorReservas = document.querySelector(".clasesjuegos")
+            if (contenedorReservas) contenedorReservas.remove()
 
             const juegosGuardadosPC = document.createElement("div")
             juegosGuardadosPC.classList.add("clasesjuegos")
@@ -106,9 +108,11 @@ fetch("indexJ.json")
                 textosselector.innerText = nselector.value
                 textosselector.classList.add("textoselector")
 
-                nselector.addEventListener("change", function() {
-                const opcionnueva = this.options[this.selectedIndex]
-                textosselector.textContent = opcionnueva.value
+                // actualizar tanto el <p> como el localStorage
+                nselector.addEventListener("change", (e) => {
+                    textosselector.innerText = e.target.value
+                    card.selectedPc = e.target.value // guardar en el objeto
+                    localStorage.setItem("guardada", JSON.stringify(cardsGuardadas))
                 })
 
 
